@@ -35,6 +35,13 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudents(Student[] students)throws IllegalArgumentException {
 		// Add your implementation here
+		try{
+			if(students==null)
+				throw new IllegalArgumentException("no index");
+		}
+		catch(IllegalArgumentException e){
+			System.out.println(e.getMessage());
+		}
 		
 	}
 
