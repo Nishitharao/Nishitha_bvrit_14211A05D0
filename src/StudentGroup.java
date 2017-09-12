@@ -26,7 +26,6 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		Scanner sc= new Scanner(System.in);
 		if(students.length!=0)
 			return students;
 		else
@@ -41,8 +40,6 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		if(index<0||index>=students.length)
-			throw IllegalArgumentException();
 		return null;
 	}
 
