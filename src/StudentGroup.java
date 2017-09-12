@@ -35,6 +35,19 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudents(Student[] students)throws IllegalArgumentException {
 		// Add your implementation here
+		
+	}
+
+	@Override
+	public Student getStudent(int index)throws IllegalArgumentException {
+		// Add your implementation
+		return null;
+	}
+
+	@Override
+	public void setStudent(Student student, int index) {
+		// Add your implementation here
+		students[index]=student;
 		try{
 			if(students==null)
 				throw new IllegalArgumentException("no index");
@@ -42,11 +55,6 @@ public class StudentGroup implements StudentArrayOperation {
 		catch(IllegalArgumentException e){
 			System.out.println(e.getMessage());
 		}
-	}
-
-	@Override
-	public Student getStudent(int index)throws IllegalArgumentException {
-		// Add your implementation here
 		try{
 			if(index<0||index>=students.length)
 				throw new IllegalArgumentException("no index");
@@ -54,12 +62,6 @@ public class StudentGroup implements StudentArrayOperation {
 		catch(IllegalArgumentException e){
 			System.out.println(e.getMessage());
 		}
-		return null;
-	}
-
-	@Override
-	public void setStudent(Student student, int index) {
-		// Add your implementation here
 	}
 
 	@Override
