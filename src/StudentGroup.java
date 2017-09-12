@@ -26,7 +26,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		Scanner sc=new Scanner(System.in);
+		Scanner sc= new Scanner(System.in);
 		if(students.length!=0)
 			return students;
 		else
